@@ -1,0 +1,7 @@
+#write a program to swap the value of two variable through a function
+a = 2
+b = 3
+print(a, b)
+a, b = b, a
+print("After swap")
+print(a, b)
