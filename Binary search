@@ -1,18 +1,18 @@
 #Write a program for binary search
-def Search(array, x, low, high):
-    while low <= high:
-        mid = low + (high - low)//2
-        if array[mid] == x:
+def Search(arr, x, l, h):
+    while l <= h:
+        mid = l + (h - l)//2
+        if arr[mid] == x:
             return mid
-        elif array[mid] < x:
-            low = mid + 1
+        elif arr[mid] < x:
+            l = m + 1
         else:
-            high = mid - 1
+            h = m - 1
     return -1
-array = [3, 4, 5, 6, 7, 8, 9]
-x = 4
-result = Search(array, x, 0, len(array)-1)
-if result != -1:
-    print("Element is present at index " , str(result))
+arr = [10,23,21,19,14,7]
+x = 21
+r = Search(arr, x, 0, len(arr)-1)
+if r != -1:
+    print("Element is present at index " , str(r))
 else:
     print("Not found")
