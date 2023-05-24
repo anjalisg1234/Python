@@ -1,0 +1,6 @@
+#Python program to find the size of a Tuple. 
+t = (5, 8, 15, 3, 9)
+count = 0
+for i in t:
+    count += 1
+print("Tuple size is",count)
